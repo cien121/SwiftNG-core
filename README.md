@@ -1,8 +1,8 @@
-# AndroidLibXrayLite — ArasClient core bindings
+# SwiftNG-core — SwiftNG core bindings
 
-gomobile bindings that compile the [ArasClient core](https://github.com/ArasTey/xray-core) (Xray-core with AnyTLS + AmneziaWG 3.1) into `aras-core.aar` for [ArasClient](https://github.com/ArasTey/ArasClient).
+gomobile bindings that compile the [SwiftNG core](https://github.com/cien121/xray-core) (Xray-core with AnyTLS patch) into `swiftng-core.aar` for [SwiftNG](https://github.com/cien121/SwiftNG).
 
-Based on [2dust/AndroidLibXrayLite](https://github.com/2dust/AndroidLibXrayLite).
+Based on [2dust/AndroidLibXrayLite](https://github.com/2dust/AndroidLibXrayLite), via [ArasTey/AndroidLibXrayLite](https://github.com/ArasTey/AndroidLibXrayLite).
 
 ## What's added
 
@@ -37,4 +37,4 @@ gomobile bind -androidapi 24 -trimpath \
   -ldflags='-s -w -buildid= -checklinkname=0' -o aras-core.aar ./
 ```
 
-The output `aras-core.aar` is consumed by [ArasClient](https://github.com/ArasTey/ArasClient) (`app/libs/`). Its GitHub Actions workflow builds this AAR from this public source, then builds the app on top of it — so every release APK is reproducible from open source.
+The output `swiftng-core.aar` is consumed by [SwiftNG](https://github.com/cien121/SwiftNG) (`V2rayNG/app/libs/`). Its GitHub Actions workflow builds this AAR from this public source, then builds the app on top of it — so every release APK is reproducible from open source.
